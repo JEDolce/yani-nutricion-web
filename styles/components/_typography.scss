@@ -1,0 +1,83 @@
+@use '../custom' as *;              // Si no invoco el modulo, me tira error por el uso de variables 
+
+// DISPLAY-2
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    color: $blue-1;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.4rem;
+            display: inline-block;
+        }
+    }
+}
+
+// DISPLAY-3
+.display-3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: $blue-1;
+
+    &--title {
+        font-size: 1.2rem;
+        //text-transform: capitalize;
+        font-weight: 600;
+        font-family:'Ubuntu', sans-serif;
+        display: inline-block;
+        // background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-background-clip: text;              // Estas dos propiedades hacen que el titulo tome el color del gradiente
+        -webkit-text-fill-color: $blue-1;   
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// HEADING LINES
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $orange;
+}
+
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $orange;
+}
+
+// BORDER RIGHT
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
+
+// GRADIENT BG
+.gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+
+

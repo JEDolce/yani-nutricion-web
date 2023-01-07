@@ -1,0 +1,27 @@
+1) Crear una carpeta (bootstrap-v5)
+2) Desde la terminal y dentro de la carpeta creada ingresar 'npm init' para crear package.json
+3) Instalar Sass localmente con 'npm install --save-dev sass' (se guarda como un devDependency)
+4) Instalar Bootstrap localmente con 'npm install bootstrap --save' (pongo --save para guardarla como un dependency)
+5) Instalar el paquete de Fontawesome con 'npm install --save @fortawesome/fontawesome-free'
+6) Instalar autoprefixer con 'npm install postcss-cli autoprefixer --save'
+7) Remover lo que estaba en Script en package.json ("test": "echo \"Error: no test specified\" && exit 1")
+8) Agregar en Script "compile:sass":"sass scss:assets/css"
+9) Dentro de la carpeta bootstrap-v5 crear otra carpeta scss
+10) Dentro de la carpeta scss crear el archivo style.scss
+11) En la terminal (en bootstrap-v5) correr el script 'npm run compile:sass' 
+    => se crea la carpeta /assets/css y los archivos style.css y style.css.map
+12) Modificar el script en package.json => "compile:sass":"sass --watch scss:assets/css" 
+    => de todas formas puedo compilar con la extension de vsc
+
+
+Por una configuracion que puse en vsc hace un tiempo atras, 
+cuando doy watch sass me crea los archivos css y css.map en
+la misma carpeta donde esta el archivo .scss 
+Tecnicamente no hay cambios, pero si quiero tener una carpeta aparte
+deberia chequear esa configuracion. 
+
+
+Como es la onda => agrego al html las clases asociadas a bootstrap
+                   y eluego edito con sass 
+
+

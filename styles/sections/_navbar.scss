@@ -1,0 +1,25 @@
+@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../components/mixins' as *;
+
+.menu {
+
+    img {
+        height: 6rem;
+    }
+
+    li {
+        padding: 0.25rem 0.8rem 0rem 0.8rem;
+
+        :hover {
+            color: $blue-5 !important;
+        }
+
+        a {
+            font-family: 'Ubuntu', sans-serif;
+            color: $orange-1 !important;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+    }
+}
