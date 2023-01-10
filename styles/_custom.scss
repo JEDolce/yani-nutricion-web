@@ -7,26 +7,32 @@
 // FONTS
 $font: 'Ubuntu';
 
-// Theme colors
-$blue-1: #041C32;
-$blue-2: #04293A;
-$blue-3: #064663;
-$blue-4: #406882;
-$blue-5: #6998AB;
-$orange: #FF7800;
-$orange-light: #f1a664;
-$purple-dark: #9926f0;
-$purple-ligth: #bb6ef5;
-$pink: #d122e3;
+// COLORS
+$first-color: #60A9A6;
+$second-color: #C3F9D5;
+$third-color: #F9FDB3;
+$fourth-color: #FC94B4;
 $footer: #151414;
 
+// White and Gray colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
 // Color verde: 
-$green-0: #A1E59C;
 $green-1: #53BF9D;
 $green-2: #76BA99;
-$green-3: #dbfabb;
-$green-4: #C7F2A4;
-
+$green-3: #A1E59C;
+$green-4: #dbfabb;
+$green-5: #C7F2A4;
 
 // Color Azul: 
 $blue-1: #60A9A6;
@@ -50,27 +56,11 @@ $pink-4: #FFE3E1;
 $pink-5: #FFE1E1;
 $pink-6: #FFD6EC;
 
-// White and Gray colors
-$white: #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black: #000;
-
-$primary: $blue-5;
-$secondary: $orange;
-
 // Accordeon overrides
 $accordion-padding-y: 1.5rem; // Sobreescribo estas variables
 $accordion-padding-x: 1.5rem;
-$accordion-icon-color: $orange;
-$accordion-icon-active-color: $orange-light;
+$accordion-icon-color: $orange-1;
+$accordion-icon-active-color: $orange-2;
 
 $accordion-icon-width: 1.875rem;
 

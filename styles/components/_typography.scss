@@ -1,4 +1,11 @@
-@use '../custom' as *;              // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
+
+// FONTS
+a,
+p {
+    font-weight: 100;
+    font-size: 16px;
+}
 
 // DISPLAY-2
 .display-2 {
@@ -35,11 +42,11 @@
         font-size: 1.2rem;
         //text-transform: capitalize;
         font-weight: 600;
-        font-family:'Ubuntu', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         display: inline-block;
         // background-image: linear-gradient(to right, $primary, $secondary);
-        -webkit-background-clip: text;              // Estas dos propiedades hacen que el titulo tome el color del gradiente
-        -webkit-text-fill-color: $blue-1;   
+        -webkit-background-clip: text; // Estas dos propiedades hacen que el titulo tome el color del gradiente
+        -webkit-text-fill-color: $blue-1;
 
         @include media-breakpoint-up(lg) {
             font-size: 1.8rem;
@@ -54,7 +61,7 @@
     height: 0.1rem;
     display: block;
     margin: 0 auto;
-    background-color: $orange;
+    background-color: $orange-1;
 }
 
 .heading-line::after {
@@ -65,7 +72,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
-    background-color: $orange;
+    background-color: $orange-1;
 }
 
 // BORDER RIGHT
@@ -76,8 +83,5 @@
 
 // GRADIENT BG
 .gradient {
-    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+    background: linear-gradient(to right, rgba($first-color, 0.95), rgba($second-color, 0.95));
 }
-
-
-

@@ -1,4 +1,4 @@
-@use '../custom' as *;              // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
 @use '../components/mixins' as *;
 
 footer {
@@ -11,7 +11,7 @@ footer {
 
     &__icon {
         width: 2rem;
-        stroke: $primary;
+        stroke: $first-color;
         padding-top: 0.5rem;
 
         @include media-breakpoint-up(sm) {
@@ -77,7 +77,7 @@ footer {
             text-decoration: none;
 
             &:hover {
-                color: $primary;
+                color: $first-color;
             }
         }
     }
@@ -96,7 +96,7 @@ footer {
             text-decoration: none;
 
             &:hover {
-                color: $primary;
+                color: $first-color;
                 text-decoration: underline;
             }
         }

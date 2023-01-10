@@ -1,5 +1,4 @@
-@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
-@use '../components/mixins' as *;
+@use '../custom' as *;
 
 .menu {
 
@@ -11,7 +10,7 @@
         padding: 0.25rem 0.8rem 0rem 0.8rem;
 
         :hover {
-            color: $blue-5 !important;
+            color: $blue-2 !important;
         }
 
         a {

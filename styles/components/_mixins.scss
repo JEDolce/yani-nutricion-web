@@ -1,8 +1,8 @@
-@use '../custom' as *;   // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
 
 // Gradient Mixin
 @mixin gradient {
-    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+    background: linear-gradient(to right, rgba($first-color, 0.95), rgba($second-color, 0.95));
 }
 
 // Absolute Center Mixin
@@ -11,6 +11,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+// Flex center
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 // Transition

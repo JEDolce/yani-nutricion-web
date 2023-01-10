@@ -1,4 +1,5 @@
-@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../custom' as *;
+@use '../components/mixins' as *;
 
 .contact {
     position: relative;
@@ -14,44 +15,103 @@
 
     &__form {
         border-radius: 20px;
-
-        // :nth-child() {
-        //     background-color: aqua;
-        //     border-radius: 20px;
-        //     padding: 3rem 1rem;
-        // }
     }
 
+    .left {
+        background-color: #3e2093;
+        padding: 3rem 1rem 3rem 2rem;
+        border-radius: 20px;
+        color: white;
+        position: relative;
+        overflow: hidden;
 
-
-    @include media-breakpoint-up(lg) {
-        padding: 3rem;
-    }
-
-    &__content {
-        padding: 1rem;
+        h3 {
+            font-weight: 600;
+        }
 
         p {
-            font-size: 0.8rem;
+            margin-bottom: 3rem;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.75rem;
+            color: $gray-500;
+        }
 
-            @include media-breakpoint-up(lg) {
-                font-size: 1rem;
+        ul {
+            margin-bottom: 5rem;
+
+            li {
+                font-size: 1.5rem;
+                margin-bottom: 1.2rem;
+
+                a {
+                    font-size: 1.2rem;
+                    margin-left: 0.75rem;
+                }
+
+                i {
+                    color: #f9949c;
+                }
+
+                .fa-location-dot {
+                    height: 24px;
+                    width: 24px;
+                }
             }
         }
 
-        @include media-breakpoint-up(lg) {
-            margin-top: 5rem;
+        .icons-container {
+            display: flex;
+
+            .media-icon {
+                margin-left: 0.75rem;
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                @include flexCenter;
+
+                &:hover {
+                    background-color: #f9949c;
+                    transition: all 0.5s ease-in-out;
+
+                    i {
+                        color: #3e2093;
+                    }
+                }
+
+
+                a {
+                    color: white;
+
+                    i {
+                        font-size: 20px;
+                        color: #f9949c;
+                    }
+                }
+            }
         }
 
-        .icon {
-            font-size: 1.5rem;
-            color: $orange;
-            margin-right: 0.5rem;
-
-            @include media-breakpoint-up(lg) {
-                font-size: 2.5rem;
-            }
+        .circle {
+            background-color: #f9949c;
+            border-radius: 50%;
+            height: 240px;
+            width: 240px;
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
         }
     }
 
+
+}
+
+.right {
+    padding: 3rem 1rem;
+}
+
+
+@include media-breakpoint-up(md) {
+    .inputs {
+        display: flex;
+    }
 }
