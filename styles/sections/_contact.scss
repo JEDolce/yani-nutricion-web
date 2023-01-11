@@ -6,13 +6,6 @@
     padding: 1rem;
     background-color: $gray-100;
 
-    .lead {
-        @include media-breakpoint-up(lg) {
-            padding-left: 5rem;
-            padding-right: 5rem;
-        }
-    }
-
     &__form {
         border-radius: 20px;
     }
@@ -101,17 +94,52 @@
             right: -80px;
         }
     }
-
-
 }
 
 .right {
     padding: 3rem 1rem;
+
+    input {
+        border: none;
+        border-bottom: 1px solid $gray-300;
+        width: 80%;
+    }
 }
 
 
 @include media-breakpoint-up(md) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
     .inputs {
         display: flex;
+        justify-content: space-around;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .contact {
+
+        .lead {
+            padding: 0 5rem;
+        }
+
+        .right {
+
+            input {
+                width: 120%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .right {
+
+        input {
+            width: 200%;
+        }
     }
 }

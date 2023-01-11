@@ -10337,44 +10337,6 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.get-started {
-  padding: 4rem 0;
-  background-color: #e9ecef;
-}
-
-.cta-info {
-  padding: 3rem;
-  margin: 1rem 0;
-}
-.cta-info__list {
-  position: relative;
-  list-style-type: none;
-  display: block;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  margin-bottom: 0.7rem;
-}
-.cta-info__list li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
-  font-weight: 600;
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.form {
-  padding: 3rem;
-}
-.form button {
-  border: none;
-  color: #fff;
-}
-.form button a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
 .intro-section {
   background-color: #f8f9fa;
   width: 100%;
@@ -10527,12 +10489,6 @@ footer {
   padding: 1rem;
   background-color: #f8f9fa;
 }
-@media (min-width: 992px) {
-  .contact .lead {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
 .contact__form {
   border-radius: 20px;
 }
@@ -10611,9 +10567,32 @@ footer {
 .right {
   padding: 3rem 1rem;
 }
+.right input {
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  width: 80%;
+}
 
 @media (min-width: 768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
   .inputs {
     display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .contact .lead {
+    padding: 0 5rem;
+  }
+  .contact .right input {
+    width: 120%;
+  }
+}
+@media (min-width: 1200px) {
+  .right input {
+    width: 200%;
   }
 }/*# sourceMappingURL=style.css.map */
