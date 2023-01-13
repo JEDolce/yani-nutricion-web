@@ -17,11 +17,6 @@
 }
 
 .btn-rounded {
-    @include media-breakpoint-down(sm) {
-        // media query para que no muestre el boton 
-        display: none; // en pantallas pequeñas
-    }
-
     position: relative;
     padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
     font-weight: 700;
@@ -29,10 +24,9 @@
     border: 0.1rem solid rgba($white, 0.6);
     background-color: $white;
 
-
     span {
         position: absolute;
-        background-color: $orange-1;
+        background-color: $first-color;
         width: 2.5rem;
         height: 2.5rem;
         top: 50%;
@@ -51,6 +45,10 @@
         // @include gradient;
         background-color: $green-1;
         color: $white;
+
+        a {
+            color: $white;
+        }
 
         span {
             background-color: rgba($black, 0.6);

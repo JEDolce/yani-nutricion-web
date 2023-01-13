@@ -1,8 +1,9 @@
 @use '../custom' as *;
+@use '../components/mixins' as *;
 
-.nosotros {
-    position: relative;
-    padding: 1rem;
+.about {
+    height: 80vh;
+    @include flexCenter;
 
     .lead {
 

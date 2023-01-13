@@ -10130,14 +10130,9 @@ textarea.form-control-lg {
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
 }
-@media (max-width: 575.98px) {
-  .btn-rounded {
-    display: none;
-  }
-}
 .btn-rounded span {
   position: absolute;
-  background-color: #fa7406;
+  background-color: #60A9A6;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -10154,6 +10149,9 @@ textarea.form-control-lg {
   background-color: #53BF9D;
   color: #fff;
 }
+.btn-rounded:hover a {
+  color: #fff;
+}
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -10162,6 +10160,7 @@ a,
 p {
   font-weight: 100;
   font-size: 16px;
+  color: #60A9A6;
 }
 
 .display-2 {
@@ -10236,12 +10235,14 @@ p {
   background: linear-gradient(to right, rgba(96, 169, 166, 0.95), rgba(195, 249, 213, 0.95));
 }
 
-.nosotros {
-  position: relative;
-  padding: 1rem;
+.about {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 992px) {
-  .nosotros .lead {
+  .about .lead {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -10354,7 +10355,7 @@ footer {
 }
 
 .intro-section {
-  background-color: #f8f9fa;
+  background-color: #F9FDB3;
   width: 100%;
   height: 100vh;
 }
@@ -10364,7 +10365,6 @@ footer {
 }
 .intros a {
   text-decoration: none;
-  color: #fa7406;
   font-family: "Ubuntu", sans-serif;
 }
 .intros span {
@@ -10381,6 +10381,9 @@ footer {
   color: #C3F9D5;
 }
 
+.menu {
+  background-color: #fff;
+}
 .menu img {
   height: 6rem;
 }
