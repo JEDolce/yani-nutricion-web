@@ -10150,6 +10150,7 @@ p {
 }
 
 .display-2 {
+  padding: 0 2rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
@@ -10352,7 +10353,7 @@ footer {
   font-family: "Ubuntu", sans-serif;
 }
 .intros span {
-  color: #fa7406;
+  color: #60A9A6;
 }
 .intros .video-box {
   position: relative;
@@ -10376,7 +10377,7 @@ footer {
 }
 .menu li a {
   font-family: "Ubuntu", sans-serif;
-  color: #fa7406 !important;
+  color: #60A9A6 !important;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.3rem;
