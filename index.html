@@ -390,32 +390,32 @@
         </div>
         <!-- Columna 2 -->
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 right">
-          <form class="mx-3">
+          <form class="mx-3" id="form">
             <div class="inputs">
-              <div class="mb-4">
-                <label class="form-label">Nombre</label>
-                <input type="text" class="form-control">
+              <div class="mb-4" id="field">
+                <label class="form-label" for="from_name">Nombre</label>
+                <input type="text" class="form-control" name="from_name" id="from_name">
               </div>
-              <div class="mb-4 ">
-                <label class="form-label">Apellido</label>
-                <input type="text" class="form-control">
+              <div class="mb-4 " id="field">
+                <label class="form-label" for="from_lastname">Apellido</label>
+                <input type="text" class="form-control" name="from_lastname" id="from_lastname">
               </div>
             </div>
             <div class="inputs">
-              <div class="mb-4">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control">
+              <div class="mb-4" id="field">
+                <label class="form-label" for="user_email">Email</label>
+                <input type="email" class="form-control" name="user_email" id="user_email">
               </div>
-              <div class="mb-4">
-                <label class="form-label">Teléfono</label>
-                <input type="phone" class="form-control">
+              <div class="mb-4" id="field">
+                <label class="form-label" for="user_phone">Teléfono</label>
+                <input type="phone" class="form-control" name="user_phone" id="user_phone">
               </div>
             </div>
             <div class="mb-3 mt-5 mensaje">
-              <label class="form-label">Mensaje</label>
-              <textarea class="form-control" name="Mensaje" id="mensaje" cols="30" rows="5"></textarea>
+              <label class="form-label" for="message">Mensaje</label>
+              <textarea class="form-control" name="message" id="message" cols="30" rows="5"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <input class="w-100" type="submit" id="button" value="Enviar consulta">
           </form>
         </div>
       </div>
@@ -480,6 +480,11 @@
   <script src="styles/vendors/glightbox/js/glightbox.min.js"></script>
   <script src="main/bootstrap.bundle.min.js"></script>
   <script src="main/app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('1pY1SreRFa_h2-w6Q')
+  </script>
+  <script src="main/email.js"></script>
 </body>
 
 </html>

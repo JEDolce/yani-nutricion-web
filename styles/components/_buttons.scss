@@ -1,9 +1,24 @@
 @use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
 @use '../components/mixins' as *;
 
+#button[type="submit"] {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+#button:disabled {
+    pointer-events: none; //better than cursor: default;
+    opacity: 0.65;
+}
+
 .btn-rounded {
     @include media-breakpoint-down(sm) {
-        // media query ara que no muestre el boton 
+        // media query para que no muestre el boton 
         display: none; // en pantallas pequeñas
     }
 

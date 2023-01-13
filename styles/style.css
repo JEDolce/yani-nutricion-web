@@ -10107,6 +10107,21 @@ textarea.form-control-lg {
     opacity: 0;
   }
 }
+#button[type=submit] {
+  display: block;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
 .btn-rounded {
   position: relative;
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
@@ -10373,7 +10388,7 @@ footer {
   padding: 0.25rem 0.8rem 0rem 0.8rem;
 }
 .menu li :hover {
-  color: #CAF2D7 !important;
+  color: #FC94B4 !important;
 }
 .menu li a {
   font-family: "Ubuntu", sans-serif;
