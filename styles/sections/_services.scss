@@ -1,8 +1,9 @@
-@use '../custom' as *;              // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
 
 .services {
     position: relative;
     padding: 1rem;
+    background-color: $background-1;
 
     @include media-breakpoint-up(lg) {
         padding-right: 3rem;
@@ -11,7 +12,7 @@
     }
 
     &__content {
-        padding: 1rem;     
+        padding: 1rem;
 
         p {
             font-size: 0.8rem;

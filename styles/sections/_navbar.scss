@@ -1,7 +1,6 @@
 @use '../custom' as *;
 
 .menu {
-    background-color: $white;
 
     img {
         height: 6rem;
@@ -15,10 +14,9 @@
         }
 
         a {
-            font-family: 'Ubuntu', sans-serif;
             color: $first-color !important;
             text-transform: capitalize;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 1.3rem;
         }
     }

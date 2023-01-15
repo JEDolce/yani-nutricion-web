@@ -4,6 +4,7 @@
 .about {
     height: 80vh;
     @include flexCenter;
+    background-color: $background-1;
 
     .lead {
 

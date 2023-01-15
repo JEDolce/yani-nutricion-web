@@ -10156,6 +10156,10 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 a,
 p {
   font-weight: 100;
@@ -10167,13 +10171,16 @@ p {
   padding: 0 2rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
-  font-family: "Ubuntu", sans-serif;
   color: #60A9A6;
+}
+.display-2--title {
+  color: #272d36;
+  display: inline-block;
+  font-weight: 700;
 }
 .display-2--intro {
   display: inline-block;
   font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
 }
 .display-2--description {
   font-size: 1rem;
@@ -10189,13 +10196,11 @@ p {
 }
 
 .display-3 {
-  font-family: "Ubuntu", sans-serif;
   color: #60A9A6;
 }
 .display-3--title {
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: "Ubuntu", sans-serif;
   display: inline-block;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #60A9A6;
@@ -10212,7 +10217,7 @@ p {
   height: 0.1rem;
   display: block;
   margin: 0 auto;
-  background-color: #fa7406;
+  background-color: #FC94B4;
 }
 
 .heading-line::after {
@@ -10223,7 +10228,7 @@ p {
   display: block;
   margin: 0 auto;
   margin-bottom: 1rem;
-  background-color: #fa7406;
+  background-color: #FC94B4;
 }
 
 .border-right {
@@ -10240,6 +10245,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f4ee;
 }
 @media (min-width: 992px) {
   .about .lead {
@@ -10355,9 +10361,13 @@ footer {
 }
 
 .intro-section {
-  background-color: #F9FDB3;
+  background-color: #f8f4ee;
   width: 100%;
-  height: 100vh;
+}
+@media (min-width: 768px) {
+  .intro-section {
+    height: 100vh;
+  }
 }
 
 .intros {
@@ -10367,23 +10377,19 @@ footer {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
 }
-.intros span {
-  color: #60A9A6;
+.intros .image {
+  background-image: url("../assets/pexels-daniela-constantini-5591663.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  border-radius: 20px;
 }
-.intros .video-box {
-  position: relative;
-}
-.intros .video-box a {
-  position: absolute;
-}
-.intros .video-box a span i {
-  font-size: 6rem;
-  color: #C3F9D5;
+@media (min-width: 992px) {
+  .intros .image {
+    height: 70vh;
+  }
 }
 
-.menu {
-  background-color: #fff;
-}
 .menu img {
   height: 6rem;
 }
@@ -10394,69 +10400,16 @@ footer {
   color: #FC94B4 !important;
 }
 .menu li a {
-  font-family: "Ubuntu", sans-serif;
   color: #60A9A6 !important;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.3rem;
-}
-
-.portfolio {
-  padding: 4rem 0;
-}
-.portfolio button {
-  text-transform: capitalize;
-}
-
-.portfolio-box {
-  position: relative;
-  width: 100%;
-  max-height: 18.5rem;
-  overflow: hidden;
-  margin-top: 1rem;
-  margin-bottom: 1.2rem;
-  border-top: 0.5rem solid #CAF2D7;
-}
-.portfolio-box img {
-  width: 100%;
-}
-.portfolio-box .portfolio-info {
-  background-color: rgba(96, 169, 166, 0.75);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-.portfolio-box .portfolio-info .caption {
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.portfolio-box .portfolio-info .caption h4 {
-  text-transform: uppercase;
-  display: block;
-}
-.portfolio-box:hover img {
-  transform: scale(1.5);
-  transition-property: all;
-  transition-duration: 1000ms;
-}
-.portfolio-box:hover .portfolio-info {
-  opacity: 1;
-  visibility: visible;
-  transition-property: all;
-  transition-duration: 1000ms;
 }
 
 .services {
   position: relative;
   padding: 1rem;
+  background-color: #f8f4ee;
 }
 @media (min-width: 992px) {
   .services {
