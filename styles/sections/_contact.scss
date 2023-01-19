@@ -4,14 +4,21 @@
 .contact {
     position: relative;
     padding: 1rem;
-    background-color: $gray-100;
+    background-color: $background-1;
+
+    p {
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: $titles;
+    }
 
     &__form {
         border-radius: 20px;
     }
 
     .left {
-        background-color: #3e2093;
+        // background-color: #3e2093;
+        background-color: $first-color;
         padding: 3rem 1rem 3rem 2rem;
         border-radius: 20px;
         color: white;
@@ -27,7 +34,7 @@
             font-size: 20px;
             font-weight: 500;
             line-height: 1.75rem;
-            color: $gray-500;
+            color: $gray-200;
         }
 
         ul {
@@ -38,12 +45,14 @@
                 margin-bottom: 1.2rem;
 
                 a {
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     margin-left: 0.75rem;
+                    color: $white;
                 }
 
                 i {
-                    color: #f9949c;
+                    // color: #f9949c;
+                    color: $titles;
                 }
 
                 .fa-location-dot {
@@ -78,14 +87,14 @@
 
                     i {
                         font-size: 20px;
-                        color: #f9949c;
+                        color: $titles;
                     }
                 }
             }
         }
 
         .circle {
-            background-color: #f9949c;
+            background-color: $titles;
             border-radius: 50%;
             height: 240px;
             width: 240px;
@@ -108,14 +117,24 @@
 
 
 @include media-breakpoint-up(md) {
-    form {
-        display: flex;
-        flex-direction: column;
-    }
+    .contact {
 
-    .inputs {
-        display: flex;
-        justify-content: space-around;
+        .left {
+
+            a {
+                font-size: 1.2rem;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputs {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }
 
