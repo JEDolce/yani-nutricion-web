@@ -2,18 +2,12 @@
 @use '../components/mixins' as *;
 
 .about {
+    position: relative;
+    overflow: hidden;
     height: 100vh;
     padding-top: 6rem;
-    background-color: $background-1;
+    background-color: $gray;
     @include flexCenter;
-
-    @include media-breakpoint-up(lg) {
-        height: 80vh;
-
-        img {
-            height: 50vh;
-        }
-    }
 
     &--text {
         margin-top: 3rem;
@@ -31,5 +25,30 @@
     img {
         height: 40vh;
         border-radius: 50%;
+    }
+
+    svg {
+        position: absolute;
+        top: -3%;
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    @include media-breakpoint-up(md) {
+        svg {
+            top: -4%;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 80vh;
+
+        img {
+            height: 50vh;
+        }
+
+        svg {
+            top: -20%;
+        }
     }
 }

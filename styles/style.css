@@ -10887,20 +10887,14 @@ textarea.form-control-lg {
 }
 
 .about {
+  position: relative;
+  overflow: hidden;
   height: 100vh;
   padding-top: 6rem;
-  background-color: #f8f4ee;
+  background-color: #eeeef6;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media (min-width: 992px) {
-  .about {
-    height: 80vh;
-  }
-  .about img {
-    height: 50vh;
-  }
 }
 .about--text {
   margin-top: 3rem;
@@ -10917,6 +10911,28 @@ textarea.form-control-lg {
 .about img {
   height: 40vh;
   border-radius: 50%;
+}
+.about svg {
+  position: absolute;
+  top: -3%;
+  width: 100%;
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .about svg {
+    top: -4%;
+  }
+}
+@media (min-width: 992px) {
+  .about {
+    height: 80vh;
+  }
+  .about img {
+    height: 50vh;
+  }
+  .about svg {
+    top: -20%;
+  }
 }
 
 footer {
@@ -11073,6 +11089,9 @@ footer p {
     width: 100%;
   }
 }
+.intro-section .menu {
+  position: relative;
+}
 .intro-section .menu ul {
   margin-top: 1rem;
 }
@@ -11093,6 +11112,22 @@ footer p {
     font-size: 1.3rem;
   }
 }
+.intro-section .menu--image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.intro-section .menu--image img {
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+  height: 3rem;
+}
+@media (min-width: 992px) {
+  .intro-section .menu--image img {
+    margin-right: 4rem;
+    height: 4rem;
+  }
+}
 
 .intros {
   padding-top: 5rem;
@@ -11108,16 +11143,6 @@ footer p {
 }
 .intros .image {
   display: none;
-}
-@media (min-width: 768px) {
-  .intros .image {
-    display: block;
-    height: 40vh;
-    background-image: url("../assets/pexels-daniela-constantini-5591663.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-  }
 }
 @media (min-width: 992px) {
   .intros .image {

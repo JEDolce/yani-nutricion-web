@@ -52,8 +52,8 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light menu" id="nav">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-animation" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-start links-container" id="navbarNav">
@@ -70,7 +70,11 @@
           </ul>
         </div>
       </div>
+      <div class="menu--image">
+        <img src="/assets/logo/NUTRI _free-file.png" alt="">
+      </div>
     </nav>
+
 
     <!-- INTRO -->
     <div class="container">
@@ -84,7 +88,8 @@
               maiores quae natus id quaerat eos quasi, enim ex?</span>
           </h1>
           <a href="#contact">
-            <button class="rounded-pill btn-rounded mx-4 my-3">Consultas<span><i class="fas fa-arrow-right"></i></span>
+            <button class="rounded-pill btn-rounded mx-4 my-3 border">Consultas<span><i
+                  class="fas fa-arrow-right"></i></span>
             </button>
           </a>
         </div>
@@ -97,8 +102,24 @@
     </div>
   </section>
 
-  <!-- SOBRE MI -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="about">
+    <!-- WAVES -->
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 480" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(170, 34, 145, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(255, 236, 0, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-2)"
+        d="M0,0L60,40C120,80,240,160,360,232C480,304,600,368,720,368C840,368,960,304,1080,304C1200,304,1320,368,1440,336C1560,304,1680,176,1800,144C1920,112,2040,176,2160,216C2280,256,2400,272,2520,232C2640,192,2760,96,2880,120C3000,144,3120,288,3240,296C3360,304,3480,176,3600,120C3720,64,3840,80,3960,80C4080,80,4200,64,4320,120C4440,176,4560,304,4680,312C4800,320,4920,208,5040,208C5160,208,5280,320,5400,344C5520,368,5640,304,5760,232C5880,160,6000,80,6120,104C6240,128,6360,256,6480,264C6600,272,6720,160,6840,96C6960,32,7080,16,7200,64C7320,112,7440,224,7560,272C7680,320,7800,304,7920,280C8040,256,8160,224,8280,232C8400,240,8520,288,8580,312L8640,336L8640,480L8580,480C8520,480,8400,480,8280,480C8160,480,8040,480,7920,480C7800,480,7680,480,7560,480C7440,480,7320,480,7200,480C7080,480,6960,480,6840,480C6720,480,6600,480,6480,480C6360,480,6240,480,6120,480C6000,480,5880,480,5760,480C5640,480,5520,480,5400,480C5280,480,5160,480,5040,480C4920,480,4800,480,4680,480C4560,480,4440,480,4320,480C4200,480,4080,480,3960,480C3840,480,3720,480,3600,480C3480,480,3360,480,3240,480C3120,480,3000,480,2880,480C2760,480,2640,480,2520,480C2400,480,2280,480,2160,480C2040,480,1920,480,1800,480C1680,480,1560,480,1440,480C1320,480,1200,480,1080,480C960,480,840,480,720,480C600,480,480,480,360,480C240,480,120,480,60,480L0,480Z">
+      </path>
+    </svg>
+
+
+    <!-- ABOUT -->
     <div class="px-3 container">
       <div class="row text-center">
         <div class="col-lg-6 about--image">
