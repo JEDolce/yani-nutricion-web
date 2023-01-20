@@ -4,12 +4,12 @@
 .contact {
     position: relative;
     padding: 1rem;
-    background-color: $background-1;
+    background-color: $gray;
 
     p {
         font-weight: 300;
         font-size: 1.2rem;
-        color: $titles;
+        color: $letter;
     }
 
     &__form {
@@ -17,8 +17,7 @@
     }
 
     .left {
-        // background-color: #3e2093;
-        background-color: $first-color;
+        @include gradient;
         padding: 3rem 1rem 3rem 2rem;
         border-radius: 20px;
         color: white;
@@ -34,7 +33,7 @@
             font-size: 20px;
             font-weight: 500;
             line-height: 1.75rem;
-            color: $gray-200;
+            color: $gray;
         }
 
         ul {
@@ -44,15 +43,14 @@
                 font-size: 1.5rem;
                 margin-bottom: 1.2rem;
 
-                a {
+                span {
                     font-size: 1.1rem;
                     margin-left: 0.75rem;
                     color: $white;
                 }
 
                 i {
-                    // color: #f9949c;
-                    color: $titles;
+                    color: $letter;
                 }
 
                 .fa-location-dot {
@@ -72,6 +70,15 @@
                 border-radius: 50%;
                 @include flexCenter;
 
+                a {
+                    color: white;
+
+                    i {
+                        font-size: 24px;
+                        color: $letter;
+                    }
+                }
+
                 &:hover {
                     background-color: #f9949c;
                     transition: all 0.5s ease-in-out;
@@ -80,21 +87,11 @@
                         color: #3e2093;
                     }
                 }
-
-
-                a {
-                    color: white;
-
-                    i {
-                        font-size: 20px;
-                        color: $titles;
-                    }
-                }
             }
         }
 
         .circle {
-            background-color: $titles;
+            background-color: $letter;
             border-radius: 50%;
             height: 240px;
             width: 240px;
@@ -119,12 +116,33 @@
 @include media-breakpoint-up(md) {
     .contact {
 
+        p {
+            font-size: 1.5rem;
+        }
+
         .left {
 
-            a {
-                font-size: 1.2rem;
+            .icons-container {
+
+                .media-icon {
+                    margin-left: 2rem;
+
+                    a {
+
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+
+            .circle {
+                height: 340px;
+                width: 340px;
             }
         }
+
+
 
         form {
             display: flex;

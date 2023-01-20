@@ -2,7 +2,11 @@
 
 // Gradient Mixin
 @mixin gradient {
-    background: linear-gradient(to right, rgba($first-color, 0.95), rgba($second-color, 0.95));
+    background: linear-gradient(to right, rgba($violet, 0.9), rgba($green-1, 0.9));
+}
+
+@mixin gradientInverted {
+    background: linear-gradient(to left, rgba($violet, 0.9), rgba($green-1, 0.9));
 }
 
 // Absolute Center Mixin

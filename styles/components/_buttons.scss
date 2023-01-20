@@ -55,12 +55,13 @@
 // FROM BTN
 #button[type="submit"] {
     display: block;
-    padding: 10px 30px;
-    font-size: 16px;
-    background-color: $first-color;
-    color: #fff;
+    padding: 16px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
     border: none;
     border-radius: 10px;
+    color: #fff;
+    @include gradientInverted;
 }
 
 #button:disabled {

@@ -10823,12 +10823,13 @@ textarea.form-control-lg {
 
 #button[type=submit] {
   display: block;
-  padding: 10px 30px;
-  font-size: 16px;
-  background-color: #60A9A6;
-  color: #fff;
+  padding: 16px 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
   border: none;
   border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(to left, rgba(170, 34, 145, 0.9), rgba(19, 180, 163, 0.9));
 }
 
 #button:disabled {
@@ -10852,7 +10853,7 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 .display-2--description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: block;
   margin-top: 1.2rem;
   text-transform: none;
@@ -11272,7 +11273,7 @@ footer p {
 .contact {
   position: relative;
   padding: 1rem;
-  background-color: #f8f4ee;
+  background-color: #eeeef6;
 }
 .contact p {
   font-weight: 300;
@@ -11283,7 +11284,7 @@ footer p {
   border-radius: 20px;
 }
 .contact .left {
-  background-color: #60A9A6;
+  background: linear-gradient(to right, rgba(170, 34, 145, 0.9), rgba(19, 180, 163, 0.9));
   padding: 3rem 1rem 3rem 2rem;
   border-radius: 20px;
   color: white;
@@ -11298,7 +11299,7 @@ footer p {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.75rem;
-  color: #e9ecef;
+  color: #eeeef6;
 }
 .contact .left ul {
   margin-bottom: 5rem;
@@ -11307,7 +11308,7 @@ footer p {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;
 }
-.contact .left ul li a {
+.contact .left ul li span {
   font-size: 1.1rem;
   margin-left: 0.75rem;
   color: #fff;
@@ -11331,19 +11332,19 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+.contact .left .icons-container .media-icon a {
+  color: white;
+}
+.contact .left .icons-container .media-icon a i {
+  font-size: 24px;
+  color: #272d36;
+}
 .contact .left .icons-container .media-icon:hover {
   background-color: #f9949c;
   transition: all 0.5s ease-in-out;
 }
 .contact .left .icons-container .media-icon:hover i {
   color: #3e2093;
-}
-.contact .left .icons-container .media-icon a {
-  color: white;
-}
-.contact .left .icons-container .media-icon a i {
-  font-size: 20px;
-  color: #272d36;
 }
 .contact .left .circle {
   background-color: #272d36;
@@ -11365,8 +11366,18 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  .contact .left a {
-    font-size: 1.2rem;
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact .left .icons-container .media-icon {
+    margin-left: 2rem;
+  }
+  .contact .left .icons-container .media-icon a i {
+    font-size: 2rem;
+  }
+  .contact .left .circle {
+    height: 340px;
+    width: 340px;
   }
   .contact form {
     display: flex;
