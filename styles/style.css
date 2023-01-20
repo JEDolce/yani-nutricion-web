@@ -10784,7 +10784,6 @@ textarea.form-control-lg {
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
   color: #aa2291;
 }
@@ -10807,7 +10806,7 @@ textarea.form-control-lg {
   line-height: 2.5rem;
 }
 .btn-rounded:hover {
-  background-color: #aa2291;
+  background: linear-gradient(to right, rgba(170, 34, 145, 0.9), rgba(19, 180, 163, 0.9));
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
@@ -10835,6 +10834,24 @@ textarea.form-control-lg {
 #button:disabled {
   pointer-events: none;
   opacity: 0.65;
+}
+
+.back-to-top {
+  background-color: #aa2291;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .display-2 {
@@ -11026,24 +11043,6 @@ footer p {
 .footer-bottom__copy a:hover {
   color: #60A9A6;
   text-decoration: underline;
-}
-
-.back-to-top {
-  background-color: #4460aa;
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 1.875rem;
-  bottom: 1.875rem;
-  z-index: 9999;
-}
-.back-to-top i {
-  color: #fff;
-  font-size: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .intro-section {
@@ -11391,6 +11390,16 @@ footer p {
 @media (min-width: 992px) {
   .contact .lead {
     padding: 0 5rem;
+  }
+  .contact .left .icons-container .media-icon {
+    margin-left: 1.8rem;
+  }
+  .contact .left .icons-container .media-icon a i {
+    font-size: 1.8rem;
+  }
+  .contact .left .circle {
+    height: 240px;
+    width: 240px;
   }
   .contact .right input {
     width: 120%;

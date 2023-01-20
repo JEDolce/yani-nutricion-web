@@ -142,8 +142,6 @@
             }
         }
 
-
-
         form {
             display: flex;
             flex-direction: column;
@@ -161,6 +159,28 @@
 
         .lead {
             padding: 0 5rem;
+        }
+
+        .left {
+
+            .icons-container {
+
+                .media-icon {
+                    margin-left: 1.8rem;
+
+                    a {
+
+                        i {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+
+            .circle {
+                height: 240px;
+                width: 240px;
+            }
         }
 
         .right {
