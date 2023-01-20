@@ -6,82 +6,29 @@ footer {
     background-color: $footer;
 
     p {
-        color: $gray-300;
-    }
-}
-
-.contact-box {
-    position: relative;
-
-    &__icon {
-        width: 2rem;
-        stroke: $first-color;
-        padding-top: 0.5rem;
-
-        @include media-breakpoint-up(sm) {
-            width: 4rem;
-        }
+        color: $gray;
     }
 
-    &__info {
-        padding: 0.4rem;
-        font-weight: 600;
-
-        &--title {
-            color: $white;
-            text-decoration: none;
-            font-size: 1rem;
-
-            @include media-breakpoint-up(sm) {
-                width: 1.4rem;
-            }
-        }
-
-        &--subtitle {
-            color: $gray-600;
-            text-decoration: none;
-            font-size: 0.8rem;
-
-            @include media-breakpoint-up(sm) {
-                width: 1rem;
-            }
-        }
+    .info {
+        margin-right: 2rem;
     }
-}
 
-// Social Media Content
-.footer-sm {
+    .company-list {
+        display: block;
+        list-style-type: none;
+        position: relative;
 
-    a {
-        color: $white;
-
-        i {
-            font-size: 1rem;
-            margin-left: 1rem;
-
-            @include media-breakpoint-up(sm) {
-                font-size: 1.6rem;
-            }
-        }
-    }
-}
-
-// Company info
-.company-list {
-    display: block;
-    list-style-type: none;
-    position: relative;
-
-    li {
-        margin-bottom: 0.5rem;
-        text-decoration: none;
-
-        a {
-            color: $gray-300;
+        li {
+            margin-bottom: 0.5rem;
             text-decoration: none;
 
-            &:hover {
-                color: $first-color;
+            a {
+                color: $gray-300;
+                text-decoration: none;
+
+                &:hover {
+                    color: $first-color;
+                }
             }
         }
     }

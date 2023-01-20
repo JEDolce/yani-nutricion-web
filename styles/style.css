@@ -10958,74 +10958,25 @@ footer {
   background-color: #151414;
 }
 footer p {
-  color: #dee2e6;
+  color: #eeeef6;
 }
-
-.contact-box {
-  position: relative;
+footer .info {
+  margin-right: 2rem;
 }
-.contact-box__icon {
-  width: 2rem;
-  stroke: #60A9A6;
-  padding-top: 0.5rem;
-}
-@media (min-width: 576px) {
-  .contact-box__icon {
-    width: 4rem;
-  }
-}
-.contact-box__info {
-  padding: 0.4rem;
-  font-weight: 600;
-}
-.contact-box__info--title {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-@media (min-width: 576px) {
-  .contact-box__info--title {
-    width: 1.4rem;
-  }
-}
-.contact-box__info--subtitle {
-  color: #6c757d;
-  text-decoration: none;
-  font-size: 0.8rem;
-}
-@media (min-width: 576px) {
-  .contact-box__info--subtitle {
-    width: 1rem;
-  }
-}
-
-.footer-sm a {
-  color: #fff;
-}
-.footer-sm a i {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-@media (min-width: 576px) {
-  .footer-sm a i {
-    font-size: 1.6rem;
-  }
-}
-
-.company-list {
+footer .company-list {
   display: block;
   list-style-type: none;
   position: relative;
 }
-.company-list li {
+footer .company-list li {
   margin-bottom: 0.5rem;
   text-decoration: none;
 }
-.company-list li a {
+footer .company-list li a {
   color: #dee2e6;
   text-decoration: none;
 }
-.company-list li a:hover {
+footer .company-list li a:hover {
   color: #60A9A6;
 }
 
