@@ -4,10 +4,16 @@
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// FONTS
-$font: 'Ubuntu';
-
 // COLORS
+$gray: #eeeef6;
+$violet: #aa2291;
+$pink-1: #ed1e79;
+$pink-2: #fcb9d9;
+$green-1: #13b4a3;
+$green-2: #24bbac;
+$green-3: #67e2d6;
+$yellow: #ffec00;
+
 $first-color: #60A9A6;
 $second-color: #C3F9D5;
 $third-color: #F9FDB3;
@@ -28,43 +34,3 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
-
-// Color verde: 
-$green-1: #53BF9D;
-$green-2: #76BA99;
-$green-3: #A1E59C;
-$green-4: #dbfabb;
-$green-5: #C7F2A4;
-$green-6: #60A9A6;
-$green-7: #CAF2D7;
-
-// Color Amarillo
-$yellow-1: #FDFDBD;
-$yellow-2: #FEF9A7;
-
-// Color Naranja
-$orange-1: #fa7406;
-$orange-2: #FEBE8C;
-$orange-3: #FFD384;
-$orange-4: #FECD70;
-
-// Color Rosa
-$pink-1: #db5495;
-$pink-2: #FFB9B9;
-$pink-3: #FFDDD2;
-$pink-4: #FFE3E1;
-$pink-5: #FFE1E1;
-$pink-6: #FFD6EC;
-
-// Accordeon overrides
-$accordion-padding-y: 1.5rem; // Sobreescribo estas variables
-$accordion-padding-x: 1.5rem;
-$accordion-icon-color: $orange-1;
-$accordion-icon-active-color: $orange-2;
-$accordion-icon-width: 1.875rem;
-
-// Para cambiar los iconos, tengo que ir a https://icons.getbootstrap.com/icons
-// elegir el icono y cambiar el path
-
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");

@@ -1,21 +1,7 @@
 @use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
 @use '../components/mixins' as *;
 
-#button[type="submit"] {
-    display: block;
-    padding: 10px 30px;
-    font-size: 16px;
-    background-color: $first-color;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-}
-
-#button:disabled {
-    pointer-events: none; //better than cursor: default;
-    opacity: 0.65;
-}
-
+// INTRO BTN
 .btn-rounded {
     position: relative;
     padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
@@ -23,10 +9,15 @@
     margin: 0;
     border: 0.1rem solid rgba($white, 0.6);
     background-color: $white;
+    color: $violet;
+
+    a {
+        font-weight: 500;
+    }
 
     span {
         position: absolute;
-        background-color: $first-color;
+        background-color: $violet;
         width: 2.5rem;
         height: 2.5rem;
         top: 50%;
@@ -43,15 +34,36 @@
 
     &:hover {
         // @include gradient;
-        background-color: $green-1;
+        background-color: $violet;
         color: $white;
+        transition: all 0.5s ease-in-out;
 
         a {
             color: $white;
         }
 
         span {
-            background-color: rgba($black, 0.6);
+            background-color: rgba($white, 0.6);
+
+            i {
+                color: $violet;
+            }
         }
     }
+}
+
+// FROM BTN
+#button[type="submit"] {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: $first-color;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+#button:disabled {
+    pointer-events: none; //better than cursor: default;
+    opacity: 0.65;
 }

@@ -7,10 +7,25 @@
 @use 'components/typography';
 
 // IMPORT SECTIONS
-
 @use 'sections/about';
 @use 'sections/footer';
 @use 'sections/intro';
-@use 'sections/navbar';
 @use 'sections/services';
 @use 'sections/contact';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+    section {
+        padding-bottom: 5rem;
+    }
+
+    a,
+    p {
+        font-weight: 300;
+        font-size: 16px;
+    }
+}

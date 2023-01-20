@@ -1,31 +1,14 @@
 @use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
 
-// FONTS
-body {
-    font-family: 'Ubuntu', sans-serif;
-
-    section {
-        padding-bottom: 5rem;
-    }
-}
-
-
-a,
-p {
-    font-weight: 100;
-    font-size: 16px;
-    color: $titles;
-}
-
 // DISPLAY-2
 .display-2 {
     padding: 0 2rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
-    color: $first-color;
+    color: $green-1;
 
     &--title {
-        color: $titles;
+        color: $pink-1;
         display: inline-block;
         font-weight: 700;
     }
@@ -40,7 +23,7 @@ p {
         display: block;
         margin-top: 1.2rem;
         text-transform: none;
-        color: $titles;
+        color: $black;
 
         @include media-breakpoint-up(lg) {
             font-size: 1.4rem;
@@ -51,7 +34,7 @@ p {
 
 // DISPLAY-3
 .display-3 {
-    color: $green-6;
+    color: $green-1;
 
     &--title {
         font-size: 1.2rem;
@@ -60,7 +43,7 @@ p {
         display: inline-block;
         // background-image: linear-gradient(to right, $primary, $secondary);
         -webkit-background-clip: text; // Estas dos propiedades hacen que el titulo tome el color del gradiente
-        -webkit-text-fill-color: $green-6;
+        -webkit-text-fill-color: $green-1;
 
         @include media-breakpoint-up(lg) {
             font-size: 1.8rem;
@@ -69,25 +52,25 @@ p {
 }
 
 // HEADING LINES
-.heading-line::before {
-    content: "";
-    width: 10rem;
-    height: 0.1rem;
-    display: block;
-    margin: 0 auto;
-    background-color: $fourth-color;
-}
+// .heading-line::before {
+//     content: "";
+//     width: 10rem;
+//     height: 0.1rem;
+//     display: block;
+//     margin: 0 auto;
+//     background-color: $fourth-color;
+// }
 
-.heading-line::after {
-    content: "";
-    width: 2rem;
-    padding-top: 0.5rem;
-    height: 0.2rem;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    background-color: $fourth-color;
-}
+// .heading-line::after {
+//     content: "";
+//     width: 2rem;
+//     padding-top: 0.5rem;
+//     height: 0.2rem;
+//     display: block;
+//     margin: 0 auto;
+//     margin-bottom: 1rem;
+//     background-color: $fourth-color;
+// }
 
 // BORDER RIGHT
 .border-right {
@@ -96,6 +79,6 @@ p {
 }
 
 // GRADIENT BG
-.gradient {
-    background: linear-gradient(to right, rgba($first-color, 0.95), rgba($second-color, 0.95));
-}
+// .gradient {
+//     background: linear-gradient(to right, rgba($first-color, 0.95), rgba($second-color, 0.95));
+// }
