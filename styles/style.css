@@ -10843,19 +10843,61 @@ textarea.form-control-lg {
 .back-to-top {
   background-color: #aa2291;
   position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 1.875rem;
-  bottom: 1.875rem;
+  width: 2.8rem;
+  height: 2.8rem;
   z-index: 9999;
+  right: 1.875rem;
+  bottom: 2.875rem;
+}
+@media (min-width: 768px) {
+  .back-to-top {
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.875rem;
+  }
 }
 .back-to-top i {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.875rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .back-to-top i {
+    font-size: 1rem;
+  }
+}
+
+.whatsapp-btn {
+  background-color: #4dc247;
+  position: fixed;
+  width: 2.8rem;
+  height: 2.8rem;
+  z-index: 9999;
+  right: 1.875rem;
+  bottom: 6.875rem;
+}
+@media (min-width: 768px) {
+  .whatsapp-btn {
+    width: 3rem;
+    height: 3rem;
+    bottom: 6.25rem;
+  }
+}
+.whatsapp-btn i {
+  color: #fff;
+  font-size: 1.575rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .whatsapp-btn i {
+    font-size: 1.875rem;
+  }
 }
 
 .display-2 {

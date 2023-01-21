@@ -35,3 +35,11 @@
     opacity: 0.75;
     transition: all 0.5s ease-in-out;
 }
+
+// Circle Btn
+@mixin circleBtn {
+    position: fixed;
+    width: 2.8rem;
+    height: 2.8rem;
+    z-index: 9999;
+}
