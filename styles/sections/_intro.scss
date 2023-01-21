@@ -1,15 +1,14 @@
-@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables
+@use '../custom' as *;
 @use '../components/mixins' as *;
 
 .intro-section {
-    background-color: $gray-100;
     height: 100vh;
     padding-top: 1rem;
     position: relative;
     overflow: hidden;
 
-    @include media-breakpoint-up(md) {
-        padding-top: 2rem;
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
     }
 
     #wave-up {
@@ -58,11 +57,11 @@
                 a {
                     color: $green-1 !important;
                     text-transform: capitalize;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
 
                     @include media-breakpoint-up(md) {
                         font-weight: 400;
-                        font-size: 1.3rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -74,7 +73,7 @@
             right: 0;
 
             img {
-                margin-top: 0.5rem;
+                margin-top: 1.5rem;
                 margin-right: 2rem;
                 height: 3rem;
 
@@ -89,10 +88,42 @@
 }
 
 .intros {
-    padding-top: 5rem;
+    padding: 5rem 2rem 0rem 2rem;
 
     @include media-breakpoint-up(md) {
         padding-top: 4rem;
+    }
+
+    h1 {
+        color: $pink-1;
+        font-weight: 700;
+        font-size: 3rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        color: $green-1;
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    p {
+        color: $letter;
+        margin-top: 1.8rem;
+        line-height: 1.5rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.2rem;
+            line-height: 2.2rem;
+        }
     }
 
     a {

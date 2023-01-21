@@ -4,15 +4,18 @@
 .contact {
     position: relative;
     padding: 1rem;
-    background-color: $gray;
+    background-image: url('/assets/fondo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 
     p {
         font-weight: 300;
         font-size: 1.2rem;
-        color: $letter;
+        color: $gray;
     }
 
     &__form {
+        margin-top: 2rem;
         border-radius: 20px;
     }
 

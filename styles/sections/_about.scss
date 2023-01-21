@@ -6,14 +6,13 @@
     overflow: hidden;
     height: 100vh;
     padding-top: 6rem;
-    background-color: $gray;
     @include flexCenter;
 
     &--text {
         margin-top: 3rem;
 
         .lead {
-            color: $titles;
+            color: $letter;
 
             @include media-breakpoint-up(lg) {
                 padding-left: 5rem;
@@ -29,26 +28,25 @@
 
     svg {
         position: absolute;
-        top: -3%;
+        top: -0.5%;
         width: 100%;
         opacity: 0.3;
     }
 
-    @include media-breakpoint-up(md) {
-        svg {
-            top: -4%;
-        }
-    }
 
     @include media-breakpoint-up(lg) {
         height: 80vh;
 
-        img {
-            height: 50vh;
+        &--text {
+            margin-top: 5rem;
         }
 
-        svg {
-            top: -20%;
+        img {
+            margin-top: 5rem;
+            height: 50vh;
+            position: absolute;
+            left: 15%;
+            z-index: 1000;
         }
     }
 }

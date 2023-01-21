@@ -10830,6 +10830,10 @@ textarea.form-control-lg {
   color: #fff;
   background: linear-gradient(to left, rgba(170, 34, 145, 0.9), rgba(19, 180, 163, 0.9));
 }
+#button[type=submit]:hover {
+  opacity: 0.75;
+  transition: all 0.5s ease-in-out;
+}
 
 #button:disabled {
   pointer-events: none;
@@ -10867,10 +10871,11 @@ textarea.form-control-lg {
 }
 .display-2--intro {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 3rem;
 }
 .display-2--description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: block;
   margin-top: 1.2rem;
   text-transform: none;
@@ -10878,25 +10883,61 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .display-2--description {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: inline-block;
   }
 }
 
 .display-3 {
+  font-weight: 500;
   color: #13b4a3;
 }
 .display-3--title {
+  color: #ed1e79;
   font-size: 1.2rem;
   font-weight: 600;
   display: inline-block;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #13b4a3;
 }
 @media (min-width: 992px) {
   .display-3--title {
     font-size: 1.8rem;
   }
+}
+
+.line-vertical-top {
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  height: 4px;
+  width: 2rem;
+  background-color: #67e2d6;
+}
+
+.line-horizontal-bottom {
+  position: absolute;
+  bottom: -10%;
+  right: 30%;
+  height: 4px;
+  width: 2rem;
+  background-color: #67e2d6;
+}
+
+.line-horizontal-top {
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  height: 2rem;
+  width: 4px;
+  background-color: #67e2d6;
+}
+
+.line-vertical-bottom {
+  position: absolute;
+  bottom: -10%;
+  right: 30%;
+  height: 2rem;
+  width: 4px;
+  background-color: #67e2d6;
 }
 
 .border-right {
@@ -10909,7 +10950,6 @@ textarea.form-control-lg {
   overflow: hidden;
   height: 100vh;
   padding-top: 6rem;
-  background-color: #eeeef6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10932,24 +10972,23 @@ textarea.form-control-lg {
 }
 .about svg {
   position: absolute;
-  top: -3%;
+  top: -0.5%;
   width: 100%;
   opacity: 0.3;
-}
-@media (min-width: 768px) {
-  .about svg {
-    top: -4%;
-  }
 }
 @media (min-width: 992px) {
   .about {
     height: 80vh;
   }
-  .about img {
-    height: 50vh;
+  .about--text {
+    margin-top: 5rem;
   }
-  .about svg {
-    top: -20%;
+  .about img {
+    margin-top: 5rem;
+    height: 50vh;
+    position: absolute;
+    left: 15%;
+    z-index: 1000;
   }
 }
 
@@ -10997,15 +11036,14 @@ footer .company-list li a:hover {
 }
 
 .intro-section {
-  background-color: #f8f9fa;
   height: 100vh;
   padding-top: 1rem;
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .intro-section {
-    padding-top: 2rem;
+    padding-top: 0;
   }
 }
 .intro-section #wave-up {
@@ -11055,12 +11093,12 @@ footer .company-list li a:hover {
 .intro-section .menu ul li a {
   color: #13b4a3 !important;
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 @media (min-width: 768px) {
   .intro-section .menu ul li a {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 .intro-section .menu--image {
@@ -11069,7 +11107,7 @@ footer .company-list li a:hover {
   right: 0;
 }
 .intro-section .menu--image img {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   margin-right: 2rem;
   height: 3rem;
 }
@@ -11081,11 +11119,43 @@ footer .company-list li a:hover {
 }
 
 .intros {
-  padding-top: 5rem;
+  padding: 5rem 2rem 0rem 2rem;
 }
 @media (min-width: 768px) {
   .intros {
     padding-top: 4rem;
+  }
+}
+.intros h1 {
+  color: #ed1e79;
+  font-weight: 700;
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .intros h1 {
+    font-size: 4rem;
+  }
+}
+.intros h2 {
+  color: #13b4a3;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+@media (min-width: 768px) {
+  .intros h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+.intros p {
+  color: #272d36;
+  margin-top: 1.8rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .intros p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
   }
 }
 .intros a {
@@ -11104,7 +11174,20 @@ footer .company-list li a:hover {
 .services {
   position: relative;
   padding: 1rem;
-  background-color: #f8f4ee;
+}
+.services .svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.services .flower-svg {
+  opacity: 0.15;
+  height: 4rem;
+}
+.services h3 {
+  color: #ed1e79;
+  font-weight: 300;
 }
 @media (min-width: 992px) {
   .services {
@@ -11162,19 +11245,26 @@ footer .company-list li a:hover {
     margin-top: 2rem 2rem;
   }
 }
+.services .cards-container .card-body h5 {
+  color: #13b4a3;
+}
 .services .cards-container .card-body-btn {
   display: flex;
   justify-content: center;
 }
+.services .cards-container .card-body-btn:hover {
+  opacity: 0.75;
+  transition: all 0.5s ease-in-out;
+}
 .services .cards-container .card-body-btn a {
   text-decoration: none;
-  background-color: #60A9A6;
+  background-color: #ed1e79;
   margin: 1rem 0;
   padding: 1rem 2rem;
   color: white;
   border-radius: 10px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .services .service-box {
   position: relative;
@@ -11187,7 +11277,7 @@ footer .company-list li a:hover {
   width: 100%;
 }
 .services .service-box .service-info {
-  background-color: rgba(195, 249, 213, 0.75);
+  background-color: rgba(103, 226, 214, 0.75);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -11198,7 +11288,7 @@ footer .company-list li a:hover {
 }
 .services .service-box .service-info .caption {
   text-align: center;
-  color: #fff;
+  color: #272d36;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11223,14 +11313,17 @@ footer .company-list li a:hover {
 .contact {
   position: relative;
   padding: 1rem;
-  background-color: #eeeef6;
+  background-image: url("/assets/fondo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contact p {
   font-weight: 300;
   font-size: 1.2rem;
-  color: #272d36;
+  color: #eeeef6;
 }
 .contact__form {
+  margin-top: 2rem;
   border-radius: 20px;
 }
 .contact .left {
