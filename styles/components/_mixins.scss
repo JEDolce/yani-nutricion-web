@@ -43,3 +43,21 @@
     height: 2.8rem;
     z-index: 9999;
 }
+
+// Lines
+@mixin lines {
+    position: absolute;
+    height: 4px;
+    width: 2rem;
+    background-color: $green-2;
+}
+
+@mixin lineVer {
+    height: 2rem;
+    width: 4px;
+}
+
+@mixin lineHor {
+    height: 4px;
+    width: 2rem;
+}

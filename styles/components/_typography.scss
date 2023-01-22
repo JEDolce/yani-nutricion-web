@@ -1,4 +1,5 @@
-@use '../custom' as *; // Si no invoco el modulo, me tira error por el uso de variables 
+@use '../custom' as *;
+@use '../components/mixins' as *;
 
 // DISPLAY-2
 .display-2 {
@@ -55,39 +56,51 @@
 
 // HEADING LINES
 .line-vertical-top {
-    position: absolute;
-    top: -10%;
-    left: 30%;
-    height: 4px;
-    width: 2rem;
-    background-color: $green-3;
-}
+    @include lines;
+    @include lineVer;
+    top: -15%;
+    left: 20%;
 
-.line-horizontal-bottom {
-    position: absolute;
-    bottom: -10%;
-    right: 30%;
-    height: 4px;
-    width: 2rem;
-    background-color: $green-3;
-}
-
-.line-horizontal-top {
-    position: absolute;
-    top: -10%;
-    left: 30%;
-    height: 2rem;
-    width: 4px;
-    background-color: $green-3;
+    @include media-breakpoint-up(md) {
+        top: -10%;
+        left: 30%;
+    }
 }
 
 .line-vertical-bottom {
-    position: absolute;
-    bottom: -10%;
-    right: 30%;
-    height: 2rem;
-    width: 4px;
-    background-color: $green-3;
+    @include lines;
+    @include lineVer;
+    bottom: -15%;
+    right: 20%;
+
+    @include media-breakpoint-up(md) {
+        bottom: -10%;
+        right: 30%;
+    }
+}
+
+.line-horizontal-bottom {
+    @include lines;
+    @include lineHor;
+    bottom: -15%;
+    right: 20%;
+
+    @include media-breakpoint-up(md) {
+        bottom: -10%;
+        right: 30%;
+    }
+}
+
+.line-horizontal-top {
+    @include lines;
+    @include lineHor;
+    top: -15%;
+    left: 20%;
+
+    @include media-breakpoint-up(md) {
+        top: -10%;
+        left: 30%;
+    }
 }
 
 // BORDER RIGHT
