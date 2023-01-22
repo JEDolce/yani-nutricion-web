@@ -11410,9 +11410,9 @@ footer .company-list li a:hover {
 }
 .contact .left .icons-container .media-icon {
   margin-left: 0.75rem;
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border-radius: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11424,12 +11424,22 @@ footer .company-list li a:hover {
   font-size: 24px;
   color: #272d36;
 }
+.contact .left .icons-container .media-icon a svg {
+  height: 24px;
+  width: 24px;
+}
+.contact .left .icons-container .media-icon a svg path {
+  fill: #272d36;
+}
 .contact .left .icons-container .media-icon:hover {
-  background-color: #f9949c;
+  background-color: #fcb9d9;
   transition: all 0.5s ease-in-out;
 }
 .contact .left .icons-container .media-icon:hover i {
-  color: #3e2093;
+  color: #aa2291;
+}
+.contact .left .icons-container .media-icon:hover svg path {
+  fill: #aa2291;
 }
 .contact .left .circle {
   background-color: #272d36;

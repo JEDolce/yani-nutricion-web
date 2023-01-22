@@ -68,9 +68,9 @@
 
             .media-icon {
                 margin-left: 0.75rem;
-                height: 35px;
-                width: 35px;
-                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                border-radius: 40%;
                 @include flexCenter;
 
                 a {
@@ -80,14 +80,30 @@
                         font-size: 24px;
                         color: $letter;
                     }
+
+                    svg {
+                        height: 24px;
+                        width: 24px;
+
+                        path {
+                            fill: $letter;
+                        }
+                    }
                 }
 
                 &:hover {
-                    background-color: #f9949c;
+                    background-color: $pink-2;
                     transition: all 0.5s ease-in-out;
 
                     i {
-                        color: #3e2093;
+                        color: $violet;
+                    }
+
+                    svg {
+
+                        path {
+                            fill: $violet;
+                        }
                     }
                 }
             }
