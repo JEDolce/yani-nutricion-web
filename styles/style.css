@@ -11344,14 +11344,63 @@ footer .company-list li a:hover {
   transition-duration: 1000ms;
 }
 
-.faq--image {
-  background-image: url("/assets/fondo2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.faq {
+  padding-bottom: 2rem;
 }
+@media (min-width: 992px) {
+  .faq {
+    display: flex;
+    height: 105vh;
+    padding-bottom: 0;
+  }
+}
+.faq--right {
+  display: none;
+}
+@media (min-width: 992px) {
+  .faq--right {
+    display: block;
+    background-image: url("/assets/fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.faq--left {
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .faq--left {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .faq--left .accordion {
+    padding: 2rem;
+  }
+}
+.faq--left h2 {
+  color: #13b4a3;
+}
+.faq--left p {
+  color: #ed1e79;
+}
+@media (min-width: 992px) {
+  .faq--left .text {
+    margin-top: 2rem;
+  }
+}
+.faq--left .text li {
+  line-height: 1.8rem;
+}
+.faq--left .text i {
+  margin-left: 1rem;
+  color: #ed1e79;
+}
+
 .contact {
   position: relative;
   padding: 1rem;
+  background-color: rgba(252, 185, 217, 0.3);
 }
 .contact p {
   font-weight: 300;

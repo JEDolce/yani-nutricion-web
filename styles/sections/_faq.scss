@@ -2,12 +2,66 @@
 @use '../components/mixins' as *;
 
 .faq {
+    padding-bottom: 2rem;
 
-    &--image {
-        background-image: url('/assets/fondo2.png');
-        background-size: cover;
-        background-repeat: no-repeat;
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        height: 105vh;
+        padding-bottom: 0;
     }
 
-    &--text {}
+    &--right {
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+            background-image: url('/assets/fondo2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &--left {
+        padding: 1rem;
+        // .accordion-button {
+        //     height: 5rem;
+        // }
+
+        @include media-breakpoint-up(md) {
+            padding: 1rem 2rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            .accordion {
+                padding: 2rem;
+            }
+        }
+
+        h2 {
+            color: $green-1;
+        }
+
+        p {
+            color: $pink-1;
+        }
+
+
+        .text {
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 2rem;
+            }
+
+            li {
+                line-height: 1.8rem;
+            }
+
+            i {
+                margin-left: 1rem;
+                color: $pink-1;
+            }
+        }
+
+
+    }
 }
