@@ -1,0 +1,13 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.faq {
+
+    &--image {
+        background-image: url('/assets/fondo2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &--text {}
+}

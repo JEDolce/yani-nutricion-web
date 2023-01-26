@@ -11022,7 +11022,6 @@ textarea.form-control-lg {
 .about {
   position: relative;
   overflow: hidden;
-  height: 100vh;
   padding-top: 6rem;
   display: flex;
   align-items: center;
@@ -11051,17 +11050,15 @@ textarea.form-control-lg {
   opacity: 0.3;
 }
 @media (min-width: 992px) {
-  .about {
-    height: 80vh;
-  }
   .about--text {
     margin-top: 5rem;
   }
   .about img {
     margin-top: 5rem;
-    height: 50vh;
+    height: 55vh;
     position: absolute;
-    left: 15%;
+    top: 20%;
+    left: 10%;
     z-index: 1000;
   }
 }
@@ -11347,12 +11344,14 @@ footer .company-list li a:hover {
   transition-duration: 1000ms;
 }
 
-.contact {
-  position: relative;
-  padding: 1rem;
+.faq--image {
   background-image: url("/assets/fondo2.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.contact {
+  position: relative;
+  padding: 1rem;
 }
 .contact p {
   font-weight: 300;
