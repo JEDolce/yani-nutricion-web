@@ -32,20 +32,18 @@
         opacity: 0.3;
     }
 
-
     @include media-breakpoint-up(lg) {
 
         &--text {
             margin-top: 5rem;
         }
 
+        &--image {
+            @include flexCenter;
+        }
+
         img {
-            margin-top: 5rem;
-            height: 55vh;
-            position: absolute;
-            top: 20%;
-            left: 10%;
-            z-index: 1000;
+            height: 50vh;
         }
     }
 }

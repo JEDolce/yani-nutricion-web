@@ -65,12 +65,12 @@
                 }
             }
 
-            // VER SI DEJAMOS TODAS DEL MISMO TAMAÑO O NO
-            // .card-text {
-            //     @include media-breakpoint-up(lg) {
-            //         height: 160px;
-            //     }
-            // }
+            .card-text {
+
+                @include media-breakpoint-up(md) {
+                    height: 150px;
+                }
+            }
         }
     }
 

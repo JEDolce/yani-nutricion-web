@@ -5,9 +5,6 @@
     position: relative;
     padding: 1rem;
     background-color: rgba($pink-2, 0.3);
-    // background-image: url('/assets/fondo2.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
 
     p {
         font-weight: 300;
@@ -183,6 +180,14 @@
 
         .left {
 
+            ul {
+                li {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
             .icons-container {
 
                 .media-icon {
@@ -198,6 +203,26 @@
             }
 
             .circle {
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        .right {
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+
+    .contact {
+        .left {
+
+            .circle {
                 height: 240px;
                 width: 240px;
             }
@@ -206,17 +231,8 @@
         .right {
 
             input {
-                width: 120%;
+                width: 110%;
             }
-        }
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    .right {
-
-        input {
-            width: 200%;
         }
     }
 }

@@ -11053,13 +11053,13 @@ textarea.form-control-lg {
   .about--text {
     margin-top: 5rem;
   }
+  .about--image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .about img {
-    margin-top: 5rem;
-    height: 55vh;
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    z-index: 1000;
+    height: 50vh;
   }
 }
 
@@ -11299,6 +11299,11 @@ footer .company-list li a:hover {
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .services .cards-container .card .card-text {
+    height: 150px;
+  }
 }
 .services .service-box {
   position: relative;
@@ -11541,6 +11546,9 @@ footer .company-list li a:hover {
   .contact .lead {
     padding: 0 5rem;
   }
+  .contact .left ul li span {
+    font-size: 1rem;
+  }
   .contact .left .icons-container .media-icon {
     margin-left: 1.8rem;
   }
@@ -11548,16 +11556,20 @@ footer .company-list li a:hover {
     font-size: 1.8rem;
   }
   .contact .left .circle {
+    height: 200px;
+    width: 200px;
+  }
+  .contact .right input {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact .left .circle {
     height: 240px;
     width: 240px;
   }
   .contact .right input {
-    width: 120%;
-  }
-}
-@media (min-width: 1200px) {
-  .right input {
-    width: 200%;
+    width: 110%;
   }
 }
 body {
