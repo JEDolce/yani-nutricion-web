@@ -11350,7 +11350,7 @@ footer .company-list li a:hover {
 @media (min-width: 992px) {
   .faq {
     display: flex;
-    height: 105vh;
+    padding-top: 5rem;
     padding-bottom: 0;
   }
 }
@@ -11363,6 +11363,7 @@ footer .company-list li a:hover {
     background-image: url("/assets/fondo2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
   }
 }
 .faq--left {
@@ -11391,6 +11392,16 @@ footer .company-list li a:hover {
 }
 .faq--left .text li {
   line-height: 1.8rem;
+}
+.faq--left .text .pay-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq--left .text .pay-icons .bank {
+  font-size: 32px;
+  margin-right: 1rem;
 }
 .faq--left .text i {
   margin-left: 1rem;
