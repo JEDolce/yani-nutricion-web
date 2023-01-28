@@ -11327,7 +11327,7 @@ footer .company-list li a:hover {
 }
 .services .service-box .service-info .caption {
   text-align: center;
-  color: #272d36;
+  color: #aa2291;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11382,6 +11382,9 @@ footer .company-list li a:hover {
 @media (min-width: 992px) {
   .faq--left .accordion {
     padding: 2rem;
+  }
+  .faq--left p {
+    font-size: 20px;
   }
 }
 .faq--left h2 {
