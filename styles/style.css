@@ -11178,14 +11178,15 @@ footer .company-list li a:hover {
   right: 0;
 }
 .intro-section .menu--image img {
-  margin-top: 1.5rem;
-  margin-right: 2rem;
-  height: 3rem;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+  height: 4rem;
 }
 @media (min-width: 992px) {
   .intro-section .menu--image img {
+    margin-top: 1.5rem;
     margin-right: 4rem;
-    height: 4rem;
+    height: 6rem;
   }
 }
 
@@ -11222,10 +11223,11 @@ footer .company-list li a:hover {
   color: #272d36;
   margin-top: 1.8rem;
   line-height: 1.5rem;
+  font-size: 1.2;
 }
 @media (min-width: 768px) {
   .intros p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2.2rem;
   }
 }

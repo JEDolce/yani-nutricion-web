@@ -73,13 +73,14 @@
             right: 0;
 
             img {
-                margin-top: 1.5rem;
-                margin-right: 2rem;
-                height: 3rem;
+                margin-top: 0.5rem;
+                margin-right: 1.5rem;
+                height: 4rem;
 
                 @include media-breakpoint-up(lg) {
+                    margin-top: 1.5rem;
                     margin-right: 4rem;
-                    height: 4rem;
+                    height: 6rem;
                 }
             }
         }
@@ -119,9 +120,10 @@
         color: $letter;
         margin-top: 1.8rem;
         line-height: 1.5rem;
+        font-size: 1.2;
 
         @include media-breakpoint-up(md) {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 2.2rem;
         }
     }

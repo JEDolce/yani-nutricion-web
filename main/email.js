@@ -7,8 +7,8 @@ document.getElementById('form')
         btn.value = 'Enviando...';
         btn.disabled = true;
 
-        const serviceID = 'default_service';
-        const templateID = 'template_slm7gug';
+        const serviceID = 'service_olqw41n';
+        const templateID = 'template_wlr7nsy';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
@@ -16,6 +16,7 @@ document.getElementById('form')
                 btn.value = 'Enviar consulta';
                 alert('Consulta Enviada!');
             }, (err) => {
+                btn.disabled = false;
                 btn.value = 'Enviar consulta';
                 alert(JSON.stringify(err));
             });
