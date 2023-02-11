@@ -115,15 +115,24 @@
 }
 
 .intro-container {
-    @include absoluteCenter;
+    @include media-breakpoint-up (md) {
+        @include absoluteCenter;
+    }
 
     .intros {
-        @include absoluteCenter;
-        padding: 5rem 2rem 0rem 2rem;
-        width: 70%;
+        padding: 12rem 2rem 0rem 2rem;
+
+        &.paddingStyle {
+            padding-top: 1rem;
+        }
 
         @include media-breakpoint-up(md) {
             padding-top: 4rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            @include absoluteCenter;
+            width: 70%;
         }
 
         h1 {
@@ -160,6 +169,14 @@
 
             @include media-breakpoint-up(lg) {
                 width: 75%;
+            }
+        }
+
+        #btn {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                display: block;
             }
         }
 

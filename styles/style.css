@@ -11238,23 +11238,32 @@ footer .company-list li a:hover {
   }
 }
 
-.intro-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media (min-width: 768px) {
+  .intro-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .intro-container .intros {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5rem 2rem 0rem 2rem;
-  width: 70%;
+  padding: 12rem 2rem 0rem 2rem;
+}
+.intro-container .intros.paddingStyle {
+  padding-top: 1rem;
 }
 @media (min-width: 768px) {
   .intro-container .intros {
     padding-top: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .intro-container .intros {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
   }
 }
 .intro-container .intros h1 {
@@ -11293,6 +11302,14 @@ footer .company-list li a:hover {
 @media (min-width: 992px) {
   .intro-container .intros p {
     width: 75%;
+  }
+}
+.intro-container .intros #btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .intro-container .intros #btn {
+    display: block;
   }
 }
 .intro-container .intros a {
