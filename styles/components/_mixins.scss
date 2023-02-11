@@ -61,3 +61,12 @@
     height: 4px;
     width: 2rem;
 }
+
+// Drawings
+@mixin drawing {
+    position: absolute;
+    height: 7.5rem;
+    opacity: 0.3;
+    padding: 0;
+    margin: 0;
+}

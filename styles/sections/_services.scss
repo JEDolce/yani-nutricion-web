@@ -5,14 +5,8 @@
     position: relative;
     padding: 1rem;
 
-    .svg-container {
-        @include flexCenter;
-        padding-bottom: 5rem;
-    }
-
-    .flower-svg {
-        opacity: 0.15;
-        height: 4rem;
+    .drawings {
+        display: none;
     }
 
     h3 {
@@ -23,6 +17,16 @@
     @include media-breakpoint-up(lg) {
         padding-right: 3rem;
         padding-left: 3rem;
+
+        .drawings {
+            display: block;
+            @include drawing;
+        }
+
+        #star {
+            top: 0;
+            right: 10%;
+        }
     }
 
     .cards-container {

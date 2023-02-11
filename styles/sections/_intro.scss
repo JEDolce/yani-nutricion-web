@@ -7,8 +7,34 @@
     position: relative;
     overflow: hidden;
 
+    .drawings {
+        display: none;
+    }
+
     @include media-breakpoint-up(lg) {
         padding-top: 0;
+
+        .drawings {
+            display: block;
+            @include drawing;
+        }
+
+        #leave {
+            top: 30%;
+            right: 25%;
+        }
+
+        #moon {
+            top: 50%;
+            right: 10%;
+        }
+
+        #arrow-down {
+            height: 16rem;
+            opacity: 0.6;
+            bottom: 0%;
+            right: 30%;
+        }
     }
 
     #wave-up {
@@ -57,11 +83,11 @@
                 a {
                     color: $green-1 !important;
                     text-transform: capitalize;
-                    font-size: 1rem;
+                    font-size: 1.2rem;
 
                     @include media-breakpoint-up(md) {
                         font-weight: 400;
-                        font-size: 1.2rem;
+                        font-size: 1.6rem;
                     }
                 }
             }
@@ -90,67 +116,56 @@
 
 .intro-container {
     @include absoluteCenter;
-}
 
-.intros {
-    padding: 5rem 2rem 0rem 2rem;
-
-    @include media-breakpoint-up(md) {
-        padding-top: 4rem;
-    }
-
-    h1 {
-        color: $pink-1;
-        font-weight: 700;
-        font-size: 3rem;
+    .intros {
+        @include absoluteCenter;
+        padding: 5rem 2rem 0rem 2rem;
+        width: 70%;
 
         @include media-breakpoint-up(md) {
-            font-size: 4rem;
+            padding-top: 4rem;
         }
-    }
 
-    h2 {
-        color: $green-1;
-        font-size: 2rem;
-        line-height: 2.5rem;
-
-        @include media-breakpoint-up(md) {
+        h1 {
+            color: $pink-1;
+            font-weight: 700;
             font-size: 3rem;
-            line-height: 3.5rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 4rem;
+            }
         }
-    }
 
-    p {
-        color: $letter;
-        margin-top: 1.8rem;
-        line-height: 1.5rem;
-        font-size: 1.2rem;
+        h2 {
+            color: $green-1;
+            font-size: 2rem;
+            line-height: 2.5rem;
 
-        @include media-breakpoint-up(md) {
-            font-size: 1.6rem;
-            line-height: 2.2rem;
+            @include media-breakpoint-up(md) {
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
         }
-    }
 
-    a {
-        text-decoration: none;
-        font-family: 'Ubuntu', sans-serif;
-    }
+        p {
+            color: $letter;
+            margin-top: 1.8rem;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
 
-    .image {
-        display: none;
+            @include media-breakpoint-up(md) {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
 
-        // @include media-breakpoint-up(md) {
-        //     display: block;
-        //     height: 40vh;
-        //     background-image: url('../assets/pexels-daniela-constantini-5591663.jpg');
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-        //     border-radius: 20px;
-        // }
+            @include media-breakpoint-up(lg) {
+                width: 75%;
+            }
+        }
 
-        @include media-breakpoint-up(lg) {
-            height: 70vh;
+        a {
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
         }
     }
 }

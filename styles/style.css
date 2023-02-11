@@ -11027,6 +11027,9 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: center;
 }
+.about .drawings {
+  display: none;
+}
 .about--text {
   margin-top: 3rem;
 }
@@ -11043,7 +11046,7 @@ textarea.form-control-lg {
   height: 40vh;
   border-radius: 50%;
 }
-.about svg {
+.about #wave {
   position: absolute;
   top: -0.5%;
   width: 100%;
@@ -11052,6 +11055,22 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .about {
     min-height: 100vh;
+  }
+  .about .drawings {
+    display: block;
+    position: absolute;
+    height: 7.5rem;
+    opacity: 0.3;
+    padding: 0;
+    margin: 0;
+  }
+  .about #irregular-heart {
+    bottom: 10%;
+    left: 10%;
+  }
+  .about #idk {
+    bottom: 50%;
+    left: 50%;
   }
   .about--text {
     margin-top: 5rem;
@@ -11116,9 +11135,34 @@ footer .company-list li a:hover {
   position: relative;
   overflow: hidden;
 }
+.intro-section .drawings {
+  display: none;
+}
 @media (min-width: 992px) {
   .intro-section {
     padding-top: 0;
+  }
+  .intro-section .drawings {
+    display: block;
+    position: absolute;
+    height: 7.5rem;
+    opacity: 0.3;
+    padding: 0;
+    margin: 0;
+  }
+  .intro-section #leave {
+    top: 30%;
+    right: 25%;
+  }
+  .intro-section #moon {
+    top: 50%;
+    right: 10%;
+  }
+  .intro-section #arrow-down {
+    height: 16rem;
+    opacity: 0.6;
+    bottom: 0%;
+    right: 30%;
   }
 }
 .intro-section #wave-up {
@@ -11168,12 +11212,12 @@ footer .company-list li a:hover {
 .intro-section .menu ul li a {
   color: #13b4a3 !important;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 @media (min-width: 768px) {
   .intro-section .menu ul li a {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 .intro-section .menu--image {
@@ -11200,74 +11244,68 @@ footer .company-list li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.intros {
+.intro-container .intros {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 5rem 2rem 0rem 2rem;
+  width: 70%;
 }
 @media (min-width: 768px) {
-  .intros {
+  .intro-container .intros {
     padding-top: 4rem;
   }
 }
-.intros h1 {
+.intro-container .intros h1 {
   color: #ed1e79;
   font-weight: 700;
   font-size: 3rem;
 }
 @media (min-width: 768px) {
-  .intros h1 {
+  .intro-container .intros h1 {
     font-size: 4rem;
   }
 }
-.intros h2 {
+.intro-container .intros h2 {
   color: #13b4a3;
   font-size: 2rem;
   line-height: 2.5rem;
 }
 @media (min-width: 768px) {
-  .intros h2 {
+  .intro-container .intros h2 {
     font-size: 3rem;
     line-height: 3.5rem;
   }
 }
-.intros p {
+.intro-container .intros p {
   color: #272d36;
   margin-top: 1.8rem;
   line-height: 1.5rem;
   font-size: 1.2rem;
 }
 @media (min-width: 768px) {
-  .intros p {
+  .intro-container .intros p {
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
 }
-.intros a {
+@media (min-width: 992px) {
+  .intro-container .intros p {
+    width: 75%;
+  }
+}
+.intro-container .intros a {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
-}
-.intros .image {
-  display: none;
-}
-@media (min-width: 992px) {
-  .intros .image {
-    height: 70vh;
-  }
 }
 
 .services {
   position: relative;
   padding: 1rem;
 }
-.services .svg-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5rem;
-}
-.services .flower-svg {
-  opacity: 0.15;
-  height: 4rem;
+.services .drawings {
+  display: none;
 }
 .services h3 {
   color: #ed1e79;
@@ -11277,6 +11315,18 @@ footer .company-list li a:hover {
   .services {
     padding-right: 3rem;
     padding-left: 3rem;
+  }
+  .services .drawings {
+    display: block;
+    position: absolute;
+    height: 7.5rem;
+    opacity: 0.3;
+    padding: 0;
+    margin: 0;
+  }
+  .services #star {
+    top: 0;
+    right: 10%;
   }
 }
 @media (min-width: 992px) {
@@ -11433,6 +11483,7 @@ footer .company-list li a:hover {
   position: relative;
   padding: 1rem;
   background-color: rgba(252, 185, 217, 0.3);
+  min-height: 100vh;
 }
 .contact p {
   font-weight: 300;
